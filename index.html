@@ -1,0 +1,58 @@
+<!DOCKTYPE HTML>
+<html>
+	<head>
+		<title>
+			 E.L Change page on shortcut key
+		</title>
+		
+		<style>
+			body {
+				margin:0;
+				background-image:url('https://plus.unsplash.com/premium_photo-1666717576644-5701d3406840?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFpbnxlbnwwfHwwfHx8MA%3D%3D');
+			}
+			.haeding {
+				text-align:center;
+				color:white;
+				padding:20%;
+				font-size:45px;
+				font-weight:italic;
+				text-shadow:2px 10px 10px white;
+			}
+		</style>
+		
+	</head>
+<body>
+		<h1 class="haeding"><i>CHANGE PAGE ON SHORTCUT KEY</i></h1>
+</body>
+	<script>
+		window.addEventListener('keydown', function (vt) {
+		
+		if (vt.shiftKey && vt.key.toLowerCase() === "i") {
+			vt.preventDefault();
+			window.open('https://unsplash.com/s/photos/italy');
+		}
+		
+		if (vt.ctrlKey && vt.key.toLowerCase() === "p") {
+			vt.preventDefault();
+			window.open('https://unsplash.com/s/photos/singapore');
+		}
+		
+		if (vt.altKey && vt.key.toLowerCase() === "s") {
+			vt.preventDefault();
+			window.open('https://unsplash.com/s/photos/switzerland');
+		}
+		
+		if (vt.shiftKey && vt.key.toLowerCase() === "a") {
+			vt.preventDefault();
+			window.open('https://unsplash.com/s/photos/france');
+		}
+		
+		if (vt.ctrlKey && vt.key.toLowerCase() === "g") {
+			vt.preventDefault();
+			window.open('https://unsplash.com/s/photos/dubai');
+		}
+	});
+	</script>
+</html>
+
+	
